@@ -12,10 +12,10 @@ class Config(object):
   DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://MovieTimeHD1:MovieTimeHD1@cluster0.trfqzij.mongodb.net/")
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001959450594")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001959450594"))
-  BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "0").split())
+  BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "-1001870034903").split())
   FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
   BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
-  BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "0").split()))
+  BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1002118850472").split()))
   OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
   ABOUT_BOT_TEXT = f"""
 This is a Permanent FileStore Bot. 
